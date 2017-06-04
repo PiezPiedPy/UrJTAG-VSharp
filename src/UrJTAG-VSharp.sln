@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrJTAG-VSharp", "UrJTAG-VSharp.csproj", "{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrJTAG-Gui", "gui\UrJTAG-Gui.csproj", "{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EDE15049-846D-4BEC-833D-FA58AA41A2C7} = {EDE15049-846D-4BEC-833D-FA58AA41A2C7}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrJTAG-VSharp", "dll\UrJTAG-VSharp.csproj", "{EDE15049-846D-4BEC-833D-FA58AA41A2C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE15049-846D-4BEC-833D-FA58AA41A2C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE15049-846D-4BEC-833D-FA58AA41A2C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE15049-846D-4BEC-833D-FA58AA41A2C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE15049-846D-4BEC-833D-FA58AA41A2C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
