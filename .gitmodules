@@ -1,3 +1,6 @@
 [submodule "3rdParty/Ftjrev"]
 	path = 3rdParty/Ftjrev
 	url = https://github.com/PiezPiedPy/ftjrev.git
+[submodule "3rdParty/UrJTAG"]
+	path = 3rdParty/UrJTAG
+	url = https://piezpiedpy@git.code.sf.net/u/piezpiedpy/urjtag
