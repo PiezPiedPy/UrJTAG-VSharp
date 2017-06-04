@@ -1,0 +1,3 @@
+[submodule "3rdParty/Ftjrev"]
+	path = 3rdParty/Ftjrev
+	url = https://github.com/PiezPiedPy/ftjrev.git
