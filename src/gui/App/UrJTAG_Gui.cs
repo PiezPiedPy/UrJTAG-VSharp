@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UrJTAG_VSharp
+namespace UrJTAG_Gui
 {
   static class UrJTAG_Gui
   {

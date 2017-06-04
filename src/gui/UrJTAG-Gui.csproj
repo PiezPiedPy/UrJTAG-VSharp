@@ -7,8 +7,8 @@
     <ProjectGuid>{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UrJTAG_VSharp</RootNamespace>
-    <AssemblyName>UrJTAG-VSharp</AssemblyName>
+    <RootNamespace>UrJTAG_Gui</RootNamespace>
+    <AssemblyName>UrJTAG-Gui</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,13 +47,14 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>
     </DefineConstants>
-    <ErrorReport>none</ErrorReport>
+    <ErrorReport>prompt</ErrorReport>
     <WarningLevel>0</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
     <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>UrJTAG_VSharp.UrJTAG_Gui</StartupObject>
+    <StartupObject>UrJTAG_Gui.UrJTAG_Gui</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Icons\MrSmith.ico</ApplicationIcon>
@@ -78,7 +79,7 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\UrJTAG-Gui.cs" />
+    <Compile Include="App\UrJTAG_Gui.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -91,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
