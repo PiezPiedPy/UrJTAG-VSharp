@@ -23,20 +23,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UrJTAG_VSharp_NET;
 
-namespace UrJTAG_Gui
+namespace UrJTAG_GUI
 {
-  static class UrJTAG_Gui
-  {
-    /// <summary>
-    /// The main entry point for the application.
-    /// </summary>
-    [STAThread]
-    static void Main()
+    /// <summary> GUI for the <see cref="UrJTAG_VSharp"/> .NET Library</summary>
+    static class UrJTAG_GUI
     {
-      Application.EnableVisualStyles();
-      Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new MainForm());
+        /// <summary> The main entry point for the application.</summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MainForm());
+        }
     }
-  }
 }

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrJTAG-Gui", "gui\UrJTAG-Gui.csproj", "{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrJTAG-GUI", "gui\UrJTAG-GUI.csproj", "{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}"
 	ProjectSection(ProjectDependencies) = postProject
 		{EDE15049-846D-4BEC-833D-FA58AA41A2C7} = {EDE15049-846D-4BEC-833D-FA58AA41A2C7}
 	EndProjectSection
@@ -27,5 +27,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8726CDFE-0FB2-448E-8BEA-3A5AEEA4EE84}
 	EndGlobalSection
 EndGlobal

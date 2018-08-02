@@ -2,20 +2,20 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-// General Information about an assembly is controlled through the following 
+// General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UrJTAG-VSharp Gui")]
-[assembly: AssemblyDescription("A Windows Gui for the Universal JTAG C# Library based on the UrJTAG project")]
+[assembly: AssemblyTitle("A Windows GUI for the UrJTAG-VSharp .NET Library based on the UrJTAG project")]
+[assembly: AssemblyDescription("A Windows GUI for the UrJTAG-VSharp .NET Library based on the UrJTAG project")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Universal JTAG C# Library Gui")]
+[assembly: AssemblyProduct("UrJTAG-VSharp GUI")]
 [assembly: AssemblyCopyright("Copyright© (C) 2017-2018 S.Gray, (aka PiezPiedPy) and 1989, 1991 Free Software Foundation, Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// Setting ComVisible to false makes the types in this assembly not visible 
-// to COM components.  If you need to access a type in this assembly from 
+// Setting ComVisible to false makes the types in this assembly not visible
+// to COM components.  If you need to access a type in this assembly from
 // COM, set the ComVisible attribute to true on that type.
 [assembly: ComVisible(false)]
 
@@ -25,11 +25,11 @@ using System.Runtime.InteropServices;
 // Version information for an assembly consists of the following four values:
 //
 //      Major Version
-//      Minor Version 
+//      Minor Version
 //      Build Number
 //      Revision
 //
-// You can specify all the values or you can default the Build and Revision Numbers 
+// You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("0.1.0.0")]

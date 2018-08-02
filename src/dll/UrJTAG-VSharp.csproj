@@ -8,7 +8,7 @@
     <ProjectGuid>{EDE15049-846D-4BEC-833D-FA58AA41A2C7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UrJTAG_VSharp</RootNamespace>
+    <RootNamespace>UrJTAG_VSharp_NET</RootNamespace>
     <AssemblyName>UrJTAG_VSharp</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>

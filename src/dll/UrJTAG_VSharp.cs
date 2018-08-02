@@ -23,9 +23,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace UrJTAG_VSharp
+namespace UrJTAG_VSharp_NET
 {
+    /// <summary> .NET Library based on the UrJTAG project at http://urjtag.org/ </summary>
     public class UrJTAG_VSharp
-  {
+    {
     }
 }

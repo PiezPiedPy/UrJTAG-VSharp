@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("UrJTAG-VSharp")]
-[assembly: AssemblyDescription("Universal JTAG C# Library for .NET4.5 based on the UrJTAG project")]
+[assembly: AssemblyTitle(".NET Universal JTAG Library based on the UrJTAG project")]
+[assembly: AssemblyDescription(".NET Universal JTAG Library based on the UrJTAG project")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Universal JTAG C# Library")]
+[assembly: AssemblyProduct("UrJTAG-VSharp .NET Library")]
 [assembly: AssemblyCopyright("Copyright© (C) 2017-2018 S.Gray, (aka PiezPiedPy) and 1989, 1991 Free Software Foundation, Inc.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

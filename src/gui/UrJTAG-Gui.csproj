@@ -7,8 +7,8 @@
     <ProjectGuid>{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UrJTAG_Gui</RootNamespace>
-    <AssemblyName>UrJTAG-Gui</AssemblyName>
+    <RootNamespace>UrJTAG_GUI</RootNamespace>
+    <AssemblyName>UrJTAG-GUI</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -57,7 +57,7 @@
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>UrJTAG_Gui.UrJTAG_Gui</StartupObject>
+    <StartupObject>UrJTAG_GUI.UrJTAG_GUI</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>Icons\MrSmith.ico</ApplicationIcon>
@@ -82,7 +82,7 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="App\UrJTAG_Gui.cs" />
+    <Compile Include="UrJTAG_GUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -97,7 +97,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -125,6 +124,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dll\UrJTAG-VSharp.csproj">
+      <Project>{ede15049-846d-4bec-833d-fa58aa41a2c7}</Project>
+      <Name>UrJTAG-VSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
