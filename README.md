@@ -3,6 +3,8 @@ UrJTAG-VSharp
 
 UrJTAG-VSharp is a Windows GUI and .NET library based on the UrJTAG project http://urjtag.org/
 
+Note. This Project is still in development and has no working releases yet.
+
 ----
 
 Windows GUI
