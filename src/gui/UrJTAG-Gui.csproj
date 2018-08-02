@@ -60,7 +60,7 @@
     <StartupObject>UrJTAG_GUI.UrJTAG_GUI</StartupObject>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Icons\MrSmith.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\Icons\MrSmith.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -111,7 +111,7 @@
     <None Include="App\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Icons\MrSmith.ico" />
+    <Content Include="Resources\Icons\MrSmith.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
