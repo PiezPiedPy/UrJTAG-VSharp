@@ -1,7 +1,7 @@
 UrJTAG-VSharp
 =============
 
-UrJTAG-VSharp is a Windows GUI and C# library based on the UrJTAG project http://urjtag.org/
+UrJTAG-VSharp is a Windows GUI and .NET library based on the UrJTAG project http://urjtag.org/
 
 ----
 
@@ -11,9 +11,9 @@ The GUI is a native Windows Desktop App and not a Linux port using QT etc.
 
 ----
 
-C# Library
+.NET Library
 ----------
-The C# Library targets:
+The .NET Library is written in the C# language and targets:
 * .NET4.5
 * ASP.NET Core 1.0
 * Xamarin [.Android .iOS .iOS(Classic) and .Mac]
