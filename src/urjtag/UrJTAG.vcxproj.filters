@@ -1,0 +1,910 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\apps">
+      <UniqueIdentifier>{c34d19f5-cb28-4db2-9fa0-b8608b4d89a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\apps\bsdl2jtag">
+      <UniqueIdentifier>{954b208d-de26-42c1-bacc-77fdec3699b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\apps\jtag">
+      <UniqueIdentifier>{5653b8e6-6f99-4de7-83b3-a7a662763f91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bfin">
+      <UniqueIdentifier>{9c7c7999-1298-49e5-a346-9bd26c2a2caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bsdl">
+      <UniqueIdentifier>{e7f927ac-5b1c-46cb-9d82-1ecdad4427c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\bus">
+      <UniqueIdentifier>{84833d74-8aca-40c1-a946-385a53e00874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cmd">
+      <UniqueIdentifier>{722dd71a-f774-4377-82c3-50be31321ea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\flash">
+      <UniqueIdentifier>{26763ca0-9e5d-4f89-8d39-1f0db00b9a9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\global">
+      <UniqueIdentifier>{46573226-df9a-4c2c-84db-ead77ac623fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\jim">
+      <UniqueIdentifier>{dda10424-0abf-4942-adb0-28b92b00d95c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\lib">
+      <UniqueIdentifier>{e59e6eb5-8045-4aa6-82cf-46374db0da4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\part">
+      <UniqueIdentifier>{83fbce60-1a35-4bc3-91fa-13f1d606fa3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pld">
+      <UniqueIdentifier>{e9f24c40-2837-4120-8f3d-12d76abcfcc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\stapl">
+      <UniqueIdentifier>{33920fbf-0c2b-40da-9cb0-7ea468512465}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\svf">
+      <UniqueIdentifier>{3dbdb274-f452-4e0d-80d2-a5c669d76427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tap">
+      <UniqueIdentifier>{4888c1b4-6229-4d1f-be5e-88211d36be5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tap\cable">
+      <UniqueIdentifier>{27fc9040-a2c9-43ef-bfbb-0a15a2733efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tap\parport">
+      <UniqueIdentifier>{92f979ab-4764-481e-b82d-59384a112135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tap\usbconn">
+      <UniqueIdentifier>{be3eaaf7-431d-4fc4-bed7-305d800fcceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\flash">
+      <UniqueIdentifier>{3e4b7970-5bcd-45d8-8bcb-f86bf8297257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bus">
+      <UniqueIdentifier>{4180b7ba-4756-41f1-9731-9c14ca12fb70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\bsdl">
+      <UniqueIdentifier>{49ccea71-12cc-4453-886d-02c4df7dd469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tap">
+      <UniqueIdentifier>{74de76c7-68fb-47cc-879d-8c1411fd5e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tap\cable">
+      <UniqueIdentifier>{d85d0fbb-8afe-4336-a00f-a7820b7baf05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cmd">
+      <UniqueIdentifier>{cc1885f6-5679-459b-b19f-aec92a25f04f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\stapl">
+      <UniqueIdentifier>{6cb820be-8c6d-40ee-9665-a5df1781973c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tap\usbconn">
+      <UniqueIdentifier>{983471de-6f09-46ce-9cd4-9b5bee43da8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\svf">
+      <UniqueIdentifier>{cefa6ce0-71f3-4345-94e7-dc488fa65377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\pld">
+      <UniqueIdentifier>{03629130-8f18-49ce-b25d-e6cec887c363}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files">
+      <UniqueIdentifier>{a7308e72-5bb1-45a4-afef-c29362b75595}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Include Files\include">
+      <UniqueIdentifier>{6d9f596d-237d-4f73-8b40-f83a7f702df8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files\include\urjtag">
+      <UniqueIdentifier>{96ade924-8eba-48af-a2d2-c4be5caa82cb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\apps\jtag\jtag.c">
+      <Filter>Source Files\apps\jtag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\apps\bsdl2jtag\bsdl2jtag.c">
+      <Filter>Source Files\apps\bsdl2jtag</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\amd.c">
+      <Filter>Source Files\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\amd_flash.c">
+      <Filter>Source Files\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\arcom.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\arm9tdmi.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\au1500.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\avr32.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bf561_ezkit.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bcm1250.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bf518f_ezbrd.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bf533_stamp.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bf537_stamp.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bf548_ezkit.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bfin\bfin.c">
+      <Filter>Source Files\bfin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\part\bsbit.c">
+      <Filter>Source Files\part</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\bsdgpio.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl.c">
+      <Filter>Source Files\bsdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\byteblaster.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable.c">
+      <Filter>Source Files\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\cfi.c">
+      <Filter>Source Files\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\chain.c">
+      <Filter>Source Files\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl_sem.c">
+      <Filter>Source Files\bsdl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\blackfin.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bscoach.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\buses.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_writemem.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_addpart.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_bfin.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_bit.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_bsdl.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_bus.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_cable.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_cmd.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_debug.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_detect.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_detectflash.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_discovery.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_dr.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_endian.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_eraseflash.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_flashmem.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_frequency.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_get.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_help.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_idcode.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_include.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_initbus.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_instruction.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_lockflash.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_part.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_peekpoke.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_pld.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_pod.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_print.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_quit.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_readmem.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_register.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_reset.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_salias.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_scan.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_set.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_shell.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_shift.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_signal.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_stapl.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_svf.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_test.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_usleep.c">
+      <Filter>Source Files\cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\cmd_xfer.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\global\data_dir.c">
+      <Filter>Source Files\global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\part\data_register.c">
+      <Filter>Source Files\part</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\detect.c">
+      <Filter>Source Files\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\detectflash.c">
+      <Filter>Source Files\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport\direct.c">
+      <Filter>Source Files\tap\parport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\dirtyjtag.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\discovery.c">
+      <Filter>Source Files\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\dlc5.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\ea253.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\ei012.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ejtag.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ejtag_dma.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\fclock.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\flash.c">
+      <Filter>Source Files\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\ft2232.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\generic_bus.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\fjmem.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic_parport.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic_usbconn.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\gpio.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\ice100.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\idcode.c">
+      <Filter>Source Files\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\h7202.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bfin\insn-gen.c">
+      <Filter>Source Files\bfin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\part\instruction.c">
+      <Filter>Source Files\part</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\jim\intel_28f800b3.c">
+      <Filter>Source Files\jim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\intel.c">
+      <Filter>Source Files\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\getdelim.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\getline.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\hex.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ixp425.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ixp435.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ixp465.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamsym.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamarray.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamcomp.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamcrc.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamexec.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamexp.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamheap.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamjtag.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamnote.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamstack.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\jim\jim_tap.c">
+      <Filter>Source Files\jim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\jedec_exp.c">
+      <Filter>Source Files\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\jedec.c">
+      <Filter>Source Files\flash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\jim.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\jlink.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\keithkoep.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\lattice.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn\libftd2xx.c">
+      <Filter>Source Files\tap\usbconn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn\libusb.c">
+      <Filter>Source Files\tap\usbconn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn\libftdi.c">
+      <Filter>Source Files\tap\usbconn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\jopcyc.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\lbasename.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\global\log-error.c">
+      <Filter>Source Files\global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\lrealpath.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\make-relative-prefix.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\lh7a400.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\mpc8313.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\mpc824x.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\mpc837x.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\mpc5200.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\mpcbdm.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\minimal.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\global\params.c">
+      <Filter>Source Files\global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport.c">
+      <Filter>Source Files\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\global\parse.c">
+      <Filter>Source Files\global</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\part\part.c">
+      <Filter>Source Files\part</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\pld\pld.c">
+      <Filter>Source Files\pld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ppc440gx_ebc8.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ppc405ep.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport\ppi.c">
+      <Filter>Source Files\tap\parport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport\ppdev.c">
+      <Filter>Source Files\tap\parport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\readmem.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\prototype.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\pxa2x0.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\register.c">
+      <Filter>Source Files\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sa1110.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\s3c4510x.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\safe-ctype.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sharc21369_ezkit.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sh7727.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sh7750r.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sh7751r.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sharc21065l.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\part\signal.c">
+      <Filter>Source Files\part</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\jim\some_cpu.c">
+      <Filter>Source Files\jim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\state.c">
+      <Filter>Source Files\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\stapl.c">
+      <Filter>Source Files\stapl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\svf\svf.c">
+      <Filter>Source Files\svf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\tap.c">
+      <Filter>Source Files\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\triton.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\ts7800.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\tx4925.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\slsup3.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\usbblaster.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn.c">
+      <Filter>Source Files\tap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\usleep.c">
+      <Filter>Source Files\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\wiggler2.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\vision_ep9307.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\vsllink.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\wiggler.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\writemem.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\pld\xilinx_bitstream.c">
+      <Filter>Source Files\pld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\pld\xilinx.c">
+      <Filter>Source Files\pld</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\xpc.c">
+      <Filter>Source Files\tap\cable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\zefant-xs3.c">
+      <Filter>Source Files\bus</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\amd.h">
+      <Filter>Header Files\flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\blackfin.h">
+      <Filter>Header Files\bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl_types.h">
+      <Filter>Header Files\bsdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl_msg.h">
+      <Filter>Header Files\bsdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl_parser.h">
+      <Filter>Header Files\bsdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl_sysdep.h">
+      <Filter>Header Files\bsdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\buses_list.h">
+      <Filter>Header Files\bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\buses.h">
+      <Filter>Header Files\bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\cfi.h">
+      <Filter>Header Files\flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable.h">
+      <Filter>Header Files\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable_list.h">
+      <Filter>Header Files\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\cmd_xfer.h">
+      <Filter>Header Files\tap\cable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_list.h">
+      <Filter>Header Files\cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd.h">
+      <Filter>Header Files\cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\flash.h">
+      <Filter>Header Files\flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\generic_bus.h">
+      <Filter>Header Files\bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic.h">
+      <Filter>Header Files\tap\cable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic_parport.h">
+      <Filter>Header Files\tap\cable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic_usbconn_list.h">
+      <Filter>Header Files\tap\cable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic_usbconn.h">
+      <Filter>Header Files\tap\cable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\intel.h">
+      <Filter>Header Files\flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamytab.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamarray.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamcomp.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamdefs.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamexec.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamexp.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamexprt.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamheap.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamjtag.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamstack.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamsym.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamutil.h">
+      <Filter>Header Files\stapl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\jedec.h">
+      <Filter>Header Files\flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn\libusb.h">
+      <Filter>Header Files\tap\usbconn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn\libftdx.h">
+      <Filter>Header Files\tap\usbconn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\mic.h">
+      <Filter>Header Files\flash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport_list.h">
+      <Filter>Header Files\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport.h">
+      <Filter>Header Files\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\pxa2x0_mc.h">
+      <Filter>Header Files\bus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\svf\svf.h">
+      <Filter>Header Files\svf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn_list.h">
+      <Filter>Header Files\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn.h">
+      <Filter>Header Files\tap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\vhdl_parser.h">
+      <Filter>Header Files\bsdl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\pld\xilinx.h">
+      <Filter>Header Files\pld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\sysdep.h">
+      <Filter>Include Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\ansidecl.h">
+      <Filter>Include Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\filenames.h">
+      <Filter>Include Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\lex.h">
+      <Filter>Include Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\libiberty.h">
+      <Filter>Include Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\safe-ctype.h">
+      <Filter>Include Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bfin.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bitmask.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bitops.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bsbit.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bsdl.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bsdl_mode.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bssignal.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bus.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bus_driver.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\cable.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\chain.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\cmd.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\data_register.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\error.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\fclock.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\flash.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\gettext.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\jim.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\jtag.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\log.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\params.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\parport.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\parse.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\part.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\part_instruction.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\pld.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\pod.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\stapl.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\svf.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\tap.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\tap_register.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\tap_state.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\types.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\usbconn.h">
+      <Filter>Include Files\include\urjtag</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

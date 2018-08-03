@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{506A0812-97BE-4BB2-987C-AE2DF119E109}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir);$(SolutionPath)\..\..\3rdParty\UrJTAG\urjtag\include;$(SolutionPath)\..\..\3rdParty\UrJTAG\urjtag;$(IncludePath)</IncludePath>
+    <ExcludePath />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(SolutionPath)\..\..\3rdParty\UrJTAG\urjtag\include;$(SolutionPath)\..\..\3rdParty\UrJTAG\urjtag;$(IncludePath)</IncludePath>
+    <ExcludePath />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>__MINGW32__</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>__MINGW32__</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\apps\bsdl2jtag\bsdl2jtag.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\apps\jtag\jtag.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bfin\bfin.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bfin\insn-gen.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl_sem.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\arm9tdmi.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\au1500.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\avr32.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bcm1250.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bf518f_ezbrd.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bf533_stamp.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bf537_stamp.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bf548_ezkit.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bf561_ezkit.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\blackfin.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\bscoach.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\buses.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ejtag.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ejtag_dma.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\fjmem.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\generic_bus.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\h7202.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ixp425.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ixp435.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ixp465.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\jopcyc.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\lh7a400.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\mpc5200.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\mpc824x.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\mpc8313.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\mpc837x.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ppc405ep.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\ppc440gx_ebc8.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\prototype.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\pxa2x0.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\readmem.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\s3c4510x.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sa1110.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sh7727.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sh7750r.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sh7751r.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sharc21065l.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\sharc21369_ezkit.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\slsup3.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\tx4925.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\writemem.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\zefant-xs3.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_addpart.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_bfin.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_bit.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_bsdl.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_bus.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_cable.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_cmd.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_debug.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_detect.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_detectflash.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_discovery.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_dr.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_endian.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_eraseflash.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_flashmem.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_frequency.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_get.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_help.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_idcode.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_include.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_initbus.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_instruction.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_lockflash.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_part.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_peekpoke.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_pld.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_pod.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_print.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_quit.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_readmem.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_register.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_reset.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_salias.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_scan.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_set.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_shell.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_shift.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_signal.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_stapl.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_svf.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_test.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_usleep.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_writemem.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\amd.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\amd_flash.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\cfi.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\detectflash.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\flash.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\intel.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\jedec.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\jedec_exp.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\global\data_dir.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\global\log-error.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\global\params.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\global\parse.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\jim\intel_28f800b3.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\jim\jim_tap.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\jim\some_cpu.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\fclock.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\getdelim.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\getline.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\hex.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\lbasename.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\lrealpath.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\make-relative-prefix.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\safe-ctype.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\lib\usleep.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\part\bsbit.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\part\data_register.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\part\instruction.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\part\part.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\part\signal.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\pld\pld.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\pld\xilinx.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\pld\xilinx_bitstream.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamarray.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamcomp.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamcrc.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamexec.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamexp.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamheap.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamjtag.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamnote.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamstack.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamsym.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\stapl.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\svf\svf.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\arcom.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\bsdgpio.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\byteblaster.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\cmd_xfer.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\dirtyjtag.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\dlc5.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\ea253.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\ei012.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\ft2232.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic_parport.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic_usbconn.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\gpio.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\ice100.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\jim.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\jlink.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\keithkoep.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\lattice.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\minimal.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\mpcbdm.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\triton.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\ts7800.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\usbblaster.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\vision_ep9307.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\vsllink.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\wiggler.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\wiggler2.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\xpc.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\chain.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\detect.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\discovery.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\idcode.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport\direct.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport\ppdev.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport\ppi.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\register.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\state.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\tap.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn\libftd2xx.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn\libftdi.c" />
+    <ClCompile Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn\libusb.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\ansidecl.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\filenames.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\lex.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\libiberty.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\safe-ctype.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bfin.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bitmask.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bitops.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bsbit.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bsdl.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bsdl_mode.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bssignal.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bus.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\bus_driver.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\cable.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\chain.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\cmd.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\data_register.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\error.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\fclock.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\flash.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\gettext.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\jim.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\jtag.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\log.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\params.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\parport.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\parse.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\part.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\part_instruction.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\pld.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\pod.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\stapl.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\svf.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\tap.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\tap_register.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\tap_state.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\types.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\include\urjtag\usbconn.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl_msg.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl_parser.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl_sysdep.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\bsdl_types.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bsdl\vhdl_parser.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\blackfin.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\buses.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\buses_list.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\generic_bus.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\bus\pxa2x0_mc.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\cmd\cmd_list.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\amd.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\cfi.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\flash.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\intel.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\jedec.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\flash\mic.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\pld\xilinx.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamarray.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamcomp.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamdefs.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamexec.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamexp.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamexprt.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamheap.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamjtag.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamstack.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamsym.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamutil.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\stapl\jamytab.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\svf\svf.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\cmd_xfer.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic_parport.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic_usbconn.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable\generic_usbconn_list.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\cable_list.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\parport_list.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn\libftdx.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn\libusb.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\src\tap\usbconn_list.h" />
+    <ClInclude Include="..\..\3rdParty\UrJTAG\urjtag\sysdep.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
