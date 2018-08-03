@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("A Windows GUI for the UrJTAG-VSharp .NET Library based on the UrJTAG project")]
 [assembly: AssemblyDescription("A Windows GUI for the UrJTAG-VSharp .NET Library based on the UrJTAG project")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Piez Software")]
 [assembly: AssemblyProduct("UrJTAG-VSharp GUI")]
 [assembly: AssemblyCopyright("Copyright© (C) 2017-2018 S.Gray, (aka PiezPiedPy) and 1989, 1991 Free Software Foundation, Inc.")]
 [assembly: AssemblyTrademark("")]

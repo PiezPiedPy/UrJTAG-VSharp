@@ -19,32 +19,60 @@
 */
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace UrJTAG_GUI
+namespace UrJTAG_GUI.Forms
 {
     public partial class MainForm: Form
     {
+
+        private AboutBox about_box;
+
         public MainForm()
         {
             InitializeComponent();
         }
 
-        private void toolStripContainer1_TopToolStripPanel_Click(object sender, EventArgs e)
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            using (about_box = new AboutBox()) about_box.ShowDialog(this);
         }
 
-        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (StatusStrip.Visible)
+                StatusStrip.Hide();
+            else
+                StatusStrip.Show();
+        }
+
+        private void StandardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (StandardToolStrip.Visible)
+                StandardToolStrip.Hide();
+            else
+                StandardToolStrip.Show();
+        }
+
+        private void ViewToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (ViewToolStrip.Visible)
+                ViewToolStrip.Hide();
+            else
+                ViewToolStrip.Show();
+        }
+
+        private void ToolsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (ToolsToolStrip.Visible)
+                ToolsToolStrip.Hide();
+            else
+                ToolsToolStrip.Show();
         }
     }
 }

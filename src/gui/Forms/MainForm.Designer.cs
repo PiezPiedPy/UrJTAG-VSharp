@@ -18,7 +18,7 @@
   along with UrJTAG-VSharp.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-namespace UrJTAG_GUI
+namespace UrJTAG_GUI.Forms
 {
     partial class MainForm
     {
@@ -51,7 +51,7 @@ namespace UrJTAG_GUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.OpenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -59,9 +59,9 @@ namespace UrJTAG_GUI
             this.SaveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.PrintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintPreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UndoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RedoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -166,7 +166,7 @@ namespace UrJTAG_GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.MenuStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
+            this.FileToolStripMenuItem,
             this.EditToolStripMenuItem,
             this.ViewToolStripMenuItem,
             this.ToolsToolStripMenuItem,
@@ -180,9 +180,9 @@ namespace UrJTAG_GUI
             this.MenuStrip.TabIndex = 7;
             this.MenuStrip.Text = "MenuStrip1";
             // 
-            // toolStripMenuItem1
+            // FileToolStripMenuItem
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NewToolStripMenuItem,
             this.OpenToolStripMenuItem,
             this.toolStripSeparator3,
@@ -190,36 +190,38 @@ namespace UrJTAG_GUI
             this.SaveAsToolStripMenuItem,
             this.toolStripSeparator4,
             this.PrintToolStripMenuItem,
-            this.toolStripMenuItem2,
+            this.PrintPreToolStripMenuItem,
             this.ToolStripSeparator9,
-            this.toolStripMenuItem3});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(41, 23);
-            this.toolStripMenuItem1.Text = "&File";
-            this.toolStripMenuItem1.ToolTipText = "File Menu";
+            this.ExitToolStripMenuItem});
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            this.FileToolStripMenuItem.Size = new System.Drawing.Size(41, 23);
+            this.FileToolStripMenuItem.Text = "&File";
+            this.FileToolStripMenuItem.ToolTipText = "File Menu";
             // 
             // NewToolStripMenuItem
             // 
+            this.NewToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("NewToolStripMenuItem.Image")));
             this.NewToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.NewToolStripMenuItem.Name = "NewToolStripMenuItem";
             this.NewToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.NewToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.NewToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.NewToolStripMenuItem.Text = "&New";
             this.NewToolStripMenuItem.ToolTipText = "Creates a new workspace";
             // 
             // OpenToolStripMenuItem
             // 
+            this.OpenToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("OpenToolStripMenuItem.Image")));
             this.OpenToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem";
             this.OpenToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.OpenToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.OpenToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.OpenToolStripMenuItem.Text = "&Open";
             this.OpenToolStripMenuItem.ToolTipText = "Open\'s a previously saved workspace file";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(161, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // SaveToolStripMenuItem
             // 
@@ -227,7 +229,7 @@ namespace UrJTAG_GUI
             this.SaveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem";
             this.SaveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.SaveToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.SaveToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.SaveToolStripMenuItem.Text = "&Save";
             this.SaveToolStripMenuItem.ToolTipText = "Save\'s current workspace to a file";
             // 
@@ -235,41 +237,45 @@ namespace UrJTAG_GUI
             // 
             this.SaveAsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SaveAsToolStripMenuItem.Image")));
             this.SaveAsToolStripMenuItem.Name = "SaveAsToolStripMenuItem";
-            this.SaveAsToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.SaveAsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.SaveAsToolStripMenuItem.Text = "Save &As";
             this.SaveAsToolStripMenuItem.ToolTipText = "Save\'s current workspace to a file with a specified filename";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(161, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
             // PrintToolStripMenuItem
             // 
+            this.PrintToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("PrintToolStripMenuItem.Image")));
             this.PrintToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem";
             this.PrintToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.PrintToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.PrintToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.PrintToolStripMenuItem.Text = "&Print";
             // 
-            // toolStripMenuItem2
+            // PrintPreToolStripMenuItem
             // 
-            this.toolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(164, 24);
-            this.toolStripMenuItem2.Text = "Print Pre&view";
+            this.PrintPreToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("PrintPreToolStripMenuItem.Image")));
+            this.PrintPreToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.PrintPreToolStripMenuItem.Name = "PrintPreToolStripMenuItem";
+            this.PrintPreToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.PrintPreToolStripMenuItem.Text = "Print Pre&view";
             // 
             // ToolStripSeparator9
             // 
             this.ToolStripSeparator9.Name = "ToolStripSeparator9";
-            this.ToolStripSeparator9.Size = new System.Drawing.Size(161, 6);
+            this.ToolStripSeparator9.Size = new System.Drawing.Size(177, 6);
             // 
-            // toolStripMenuItem3
+            // ExitToolStripMenuItem
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(164, 24);
-            this.toolStripMenuItem3.Text = "E&xit";
-            this.toolStripMenuItem3.ToolTipText = "Exit\'s Application";
+            this.ExitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ExitToolStripMenuItem.Image")));
+            this.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem";
+            this.ExitToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.ExitToolStripMenuItem.Text = "E&xit";
+            this.ExitToolStripMenuItem.ToolTipText = "Exit\'s Application";
+            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // EditToolStripMenuItem
             // 
@@ -292,7 +298,7 @@ namespace UrJTAG_GUI
             this.UndoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("UndoToolStripMenuItem.Image")));
             this.UndoToolStripMenuItem.Name = "UndoToolStripMenuItem";
             this.UndoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.UndoToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.UndoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.UndoToolStripMenuItem.Text = "&Undo";
             this.UndoToolStripMenuItem.ToolTipText = "Undo last operation";
             // 
@@ -301,52 +307,55 @@ namespace UrJTAG_GUI
             this.RedoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("RedoToolStripMenuItem.Image")));
             this.RedoToolStripMenuItem.Name = "RedoToolStripMenuItem";
             this.RedoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.RedoToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.RedoToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.RedoToolStripMenuItem.Text = "&Redo";
             this.RedoToolStripMenuItem.ToolTipText = "Redo last operation";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(158, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
             // 
             // CutToolStripMenuItem
             // 
+            this.CutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CutToolStripMenuItem.Image")));
             this.CutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CutToolStripMenuItem.Name = "CutToolStripMenuItem";
             this.CutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.CutToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.CutToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.CutToolStripMenuItem.Text = "Cu&t";
             this.CutToolStripMenuItem.ToolTipText = "Cut to clipboard";
             // 
             // CopyToolStripMenuItem
             // 
+            this.CopyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("CopyToolStripMenuItem.Image")));
             this.CopyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem";
             this.CopyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.CopyToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.CopyToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.CopyToolStripMenuItem.Text = "&Copy";
             this.CopyToolStripMenuItem.ToolTipText = "Copy to clipboard";
             // 
             // PasteToolStripMenuItem
             // 
+            this.PasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("PasteToolStripMenuItem.Image")));
             this.PasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem";
             this.PasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.PasteToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.PasteToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.PasteToolStripMenuItem.Text = "&Paste";
             this.PasteToolStripMenuItem.ToolTipText = "Paste from clipboard";
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(158, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
             // 
             // SelectAllToolStripMenuItem
             // 
             this.SelectAllToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SelectAllToolStripMenuItem.Image")));
             this.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem";
-            this.SelectAllToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.SelectAllToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.SelectAllToolStripMenuItem.Text = "Select &All";
             this.SelectAllToolStripMenuItem.ToolTipText = "Select All";
             // 
@@ -377,63 +386,71 @@ namespace UrJTAG_GUI
             // ModulesToolStripMenuItem
             // 
             this.ModulesToolStripMenuItem.CheckOnClick = true;
+            this.ModulesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ModulesToolStripMenuItem.Image")));
             this.ModulesToolStripMenuItem.Name = "ModulesToolStripMenuItem";
-            this.ModulesToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.ModulesToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.ModulesToolStripMenuItem.Text = "&Modules";
             this.ModulesToolStripMenuItem.ToolTipText = "Modules window";
             // 
             // MonitoringToolStripMenuItem
             // 
             this.MonitoringToolStripMenuItem.CheckOnClick = true;
+            this.MonitoringToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("MonitoringToolStripMenuItem.Image")));
             this.MonitoringToolStripMenuItem.Name = "MonitoringToolStripMenuItem";
-            this.MonitoringToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.MonitoringToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.MonitoringToolStripMenuItem.Text = "M&onitoring";
             // 
             // DiagnosticsToolStripMenuItem
             // 
             this.DiagnosticsToolStripMenuItem.CheckOnClick = true;
+            this.DiagnosticsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("DiagnosticsToolStripMenuItem.Image")));
             this.DiagnosticsToolStripMenuItem.Name = "DiagnosticsToolStripMenuItem";
-            this.DiagnosticsToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.DiagnosticsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.DiagnosticsToolStripMenuItem.Text = "&Diagnostics";
             this.DiagnosticsToolStripMenuItem.ToolTipText = "Diagnostics window";
             // 
             // DataLoggingToolStripMenuItem
             // 
             this.DataLoggingToolStripMenuItem.CheckOnClick = true;
+            this.DataLoggingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("DataLoggingToolStripMenuItem.Image")));
             this.DataLoggingToolStripMenuItem.Name = "DataLoggingToolStripMenuItem";
-            this.DataLoggingToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.DataLoggingToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.DataLoggingToolStripMenuItem.Text = "Data &Logging";
             this.DataLoggingToolStripMenuItem.ToolTipText = "Data Logging window";
             // 
             // IOControlToolStripMenuItem
             // 
             this.IOControlToolStripMenuItem.CheckOnClick = true;
+            this.IOControlToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("IOControlToolStripMenuItem.Image")));
             this.IOControlToolStripMenuItem.Name = "IOControlToolStripMenuItem";
-            this.IOControlToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.IOControlToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.IOControlToolStripMenuItem.Text = "&I/O Control";
             this.IOControlToolStripMenuItem.ToolTipText = "Input/Output Control window";
             // 
             // MapsToolStripMenuItem
             // 
             this.MapsToolStripMenuItem.CheckOnClick = true;
+            this.MapsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("MapsToolStripMenuItem.Image")));
             this.MapsToolStripMenuItem.Name = "MapsToolStripMenuItem";
-            this.MapsToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.MapsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.MapsToolStripMenuItem.Text = "M&aps";
             this.MapsToolStripMenuItem.ToolTipText = "Map Data manipulation window";
             // 
             // ProgramingToolStripMenuItem
             // 
             this.ProgramingToolStripMenuItem.CheckOnClick = true;
+            this.ProgramingToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ProgramingToolStripMenuItem.Image")));
             this.ProgramingToolStripMenuItem.Name = "ProgramingToolStripMenuItem";
-            this.ProgramingToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.ProgramingToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.ProgramingToolStripMenuItem.Text = "&Programing";
             this.ProgramingToolStripMenuItem.ToolTipText = "Programming window";
             // 
             // SecurityToolStripMenuItem
             // 
             this.SecurityToolStripMenuItem.CheckOnClick = true;
+            this.SecurityToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("SecurityToolStripMenuItem.Image")));
             this.SecurityToolStripMenuItem.Name = "SecurityToolStripMenuItem";
-            this.SecurityToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.SecurityToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.SecurityToolStripMenuItem.Text = "&Security";
             this.SecurityToolStripMenuItem.ToolTipText = "Security window";
             // 
@@ -445,24 +462,27 @@ namespace UrJTAG_GUI
             // NetworkLogToolStripMenuItem
             // 
             this.NetworkLogToolStripMenuItem.CheckOnClick = true;
+            this.NetworkLogToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("NetworkLogToolStripMenuItem.Image")));
             this.NetworkLogToolStripMenuItem.Name = "NetworkLogToolStripMenuItem";
-            this.NetworkLogToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.NetworkLogToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.NetworkLogToolStripMenuItem.Text = "&Network Log";
             this.NetworkLogToolStripMenuItem.ToolTipText = "Monitoring of all network traffic window";
             // 
             // ODBIILogToolStripMenuItem
             // 
             this.ODBIILogToolStripMenuItem.CheckOnClick = true;
+            this.ODBIILogToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ODBIILogToolStripMenuItem.Image")));
             this.ODBIILogToolStripMenuItem.Name = "ODBIILogToolStripMenuItem";
-            this.ODBIILogToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.ODBIILogToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.ODBIILogToolStripMenuItem.Text = "&ODBII Log";
             this.ODBIILogToolStripMenuItem.ToolTipText = "ODBII specific traffic log window";
             // 
             // DebugToolStripMenuItem
             // 
             this.DebugToolStripMenuItem.CheckOnClick = true;
+            this.DebugToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("DebugToolStripMenuItem.Image")));
             this.DebugToolStripMenuItem.Name = "DebugToolStripMenuItem";
-            this.DebugToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.DebugToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.DebugToolStripMenuItem.Text = "De&bug";
             this.DebugToolStripMenuItem.ToolTipText = "Debuging window";
             // 
@@ -478,7 +498,7 @@ namespace UrJTAG_GUI
             this.ViewToolStripMenuItem1,
             this.ToolsToolStripMenuItem1});
             this.ToolbarsToolStripMenuItem.Name = "ToolbarsToolStripMenuItem";
-            this.ToolbarsToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.ToolbarsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.ToolbarsToolStripMenuItem.Text = "&Toolbars";
             this.ToolbarsToolStripMenuItem.ToolTipText = "Toolbar display selection";
             // 
@@ -488,8 +508,9 @@ namespace UrJTAG_GUI
             this.StandardToolStripMenuItem.CheckOnClick = true;
             this.StandardToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.StandardToolStripMenuItem.Name = "StandardToolStripMenuItem";
-            this.StandardToolStripMenuItem.Size = new System.Drawing.Size(133, 24);
+            this.StandardToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.StandardToolStripMenuItem.Text = "&Standard";
+            this.StandardToolStripMenuItem.Click += new System.EventHandler(this.StandardToolStripMenuItem_Click);
             // 
             // ViewToolStripMenuItem1
             // 
@@ -497,8 +518,9 @@ namespace UrJTAG_GUI
             this.ViewToolStripMenuItem1.CheckOnClick = true;
             this.ViewToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ViewToolStripMenuItem1.Name = "ViewToolStripMenuItem1";
-            this.ViewToolStripMenuItem1.Size = new System.Drawing.Size(133, 24);
+            this.ViewToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
             this.ViewToolStripMenuItem1.Text = "&View";
+            this.ViewToolStripMenuItem1.Click += new System.EventHandler(this.ViewToolStripMenuItem1_Click);
             // 
             // ToolsToolStripMenuItem1
             // 
@@ -506,8 +528,9 @@ namespace UrJTAG_GUI
             this.ToolsToolStripMenuItem1.CheckOnClick = true;
             this.ToolsToolStripMenuItem1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ToolsToolStripMenuItem1.Name = "ToolsToolStripMenuItem1";
-            this.ToolsToolStripMenuItem1.Size = new System.Drawing.Size(133, 24);
+            this.ToolsToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
             this.ToolsToolStripMenuItem1.Text = "&Tools";
+            this.ToolsToolStripMenuItem1.Click += new System.EventHandler(this.ToolsToolStripMenuItem1_Click);
             // 
             // toolStripSeparator7
             // 
@@ -520,9 +543,10 @@ namespace UrJTAG_GUI
             this.StatusBarToolStripMenuItem.CheckOnClick = true;
             this.StatusBarToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.StatusBarToolStripMenuItem.Name = "StatusBarToolStripMenuItem";
-            this.StatusBarToolStripMenuItem.Size = new System.Drawing.Size(161, 24);
+            this.StatusBarToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.StatusBarToolStripMenuItem.Text = "Status &Bar";
             this.StatusBarToolStripMenuItem.ToolTipText = "Status Bar Enable";
+            this.StatusBarToolStripMenuItem.Click += new System.EventHandler(this.StatusBarToolStripMenuItem_Click);
             // 
             // ToolsToolStripMenuItem
             // 
@@ -538,8 +562,9 @@ namespace UrJTAG_GUI
             // DevicesToolStripMenuItem
             // 
             this.DevicesToolStripMenuItem.CheckOnClick = true;
+            this.DevicesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("DevicesToolStripMenuItem.Image")));
             this.DevicesToolStripMenuItem.Name = "DevicesToolStripMenuItem";
-            this.DevicesToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
+            this.DevicesToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.DevicesToolStripMenuItem.Text = "&Devices";
             this.DevicesToolStripMenuItem.ToolTipText = "Vehicle Interface Device details and selection window";
             // 
@@ -551,8 +576,9 @@ namespace UrJTAG_GUI
             // OptionsToolStripMenuItem
             // 
             this.OptionsToolStripMenuItem.CheckOnClick = true;
+            this.OptionsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("OptionsToolStripMenuItem.Image")));
             this.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem";
-            this.OptionsToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
+            this.OptionsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.OptionsToolStripMenuItem.Text = "&Options";
             this.OptionsToolStripMenuItem.ToolTipText = "Application Options window";
             // 
@@ -576,8 +602,9 @@ namespace UrJTAG_GUI
             // 
             // ContentsToolStripMenuItem
             // 
+            this.ContentsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ContentsToolStripMenuItem.Image")));
             this.ContentsToolStripMenuItem.Name = "ContentsToolStripMenuItem";
-            this.ContentsToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
+            this.ContentsToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.ContentsToolStripMenuItem.Text = "&Contents";
             this.ContentsToolStripMenuItem.ToolTipText = "Displays the Help Contents";
             // 
@@ -593,6 +620,7 @@ namespace UrJTAG_GUI
             this.AboutToolStripMenuItem.Size = new System.Drawing.Size(134, 24);
             this.AboutToolStripMenuItem.Text = "&About...";
             this.AboutToolStripMenuItem.ToolTipText = "Displays the Application details";
+            this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
             // StandardToolStrip
             // 
@@ -621,6 +649,7 @@ namespace UrJTAG_GUI
             // NewToolStripButton
             // 
             this.NewToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.NewToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("NewToolStripButton.Image")));
             this.NewToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.NewToolStripButton.Name = "NewToolStripButton";
             this.NewToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -630,6 +659,7 @@ namespace UrJTAG_GUI
             // OpenToolStripButton
             // 
             this.OpenToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.OpenToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("OpenToolStripButton.Image")));
             this.OpenToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.OpenToolStripButton.Name = "OpenToolStripButton";
             this.OpenToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -649,6 +679,7 @@ namespace UrJTAG_GUI
             // PrintToolStripButton
             // 
             this.PrintToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.PrintToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("PrintToolStripButton.Image")));
             this.PrintToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.PrintToolStripButton.Name = "PrintToolStripButton";
             this.PrintToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -687,6 +718,7 @@ namespace UrJTAG_GUI
             // CutToolStripButton
             // 
             this.CutToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.CutToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("CutToolStripButton.Image")));
             this.CutToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CutToolStripButton.Name = "CutToolStripButton";
             this.CutToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -696,6 +728,7 @@ namespace UrJTAG_GUI
             // CopyToolStripButton
             // 
             this.CopyToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.CopyToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("CopyToolStripButton.Image")));
             this.CopyToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.CopyToolStripButton.Name = "CopyToolStripButton";
             this.CopyToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -705,6 +738,7 @@ namespace UrJTAG_GUI
             // PasteToolStripButton
             // 
             this.PasteToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.PasteToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("PasteToolStripButton.Image")));
             this.PasteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.PasteToolStripButton.Name = "PasteToolStripButton";
             this.PasteToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -719,6 +753,7 @@ namespace UrJTAG_GUI
             // HelpToolStripButton
             // 
             this.HelpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.HelpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("HelpToolStripButton.Image")));
             this.HelpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.HelpToolStripButton.Name = "HelpToolStripButton";
             this.HelpToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -751,6 +786,7 @@ namespace UrJTAG_GUI
             // 
             this.ModulesToolStripButton.CheckOnClick = true;
             this.ModulesToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ModulesToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("ModulesToolStripButton.Image")));
             this.ModulesToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ModulesToolStripButton.Name = "ModulesToolStripButton";
             this.ModulesToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -761,6 +797,7 @@ namespace UrJTAG_GUI
             // 
             this.MonitoringToolStripButton.CheckOnClick = true;
             this.MonitoringToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MonitoringToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("MonitoringToolStripButton.Image")));
             this.MonitoringToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MonitoringToolStripButton.Name = "MonitoringToolStripButton";
             this.MonitoringToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -771,6 +808,7 @@ namespace UrJTAG_GUI
             // 
             this.DiagnosticsToolStripButton.CheckOnClick = true;
             this.DiagnosticsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.DiagnosticsToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("DiagnosticsToolStripButton.Image")));
             this.DiagnosticsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.DiagnosticsToolStripButton.Name = "DiagnosticsToolStripButton";
             this.DiagnosticsToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -781,6 +819,7 @@ namespace UrJTAG_GUI
             // 
             this.DataLoggingToolStripButton.CheckOnClick = true;
             this.DataLoggingToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.DataLoggingToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("DataLoggingToolStripButton.Image")));
             this.DataLoggingToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.DataLoggingToolStripButton.Name = "DataLoggingToolStripButton";
             this.DataLoggingToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -791,6 +830,7 @@ namespace UrJTAG_GUI
             // 
             this.IOControlToolStripButton.CheckOnClick = true;
             this.IOControlToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.IOControlToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("IOControlToolStripButton.Image")));
             this.IOControlToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.IOControlToolStripButton.Name = "IOControlToolStripButton";
             this.IOControlToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -801,6 +841,7 @@ namespace UrJTAG_GUI
             // 
             this.MapsToolStripButton.CheckOnClick = true;
             this.MapsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.MapsToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("MapsToolStripButton.Image")));
             this.MapsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.MapsToolStripButton.Name = "MapsToolStripButton";
             this.MapsToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -811,6 +852,7 @@ namespace UrJTAG_GUI
             // 
             this.ProgramingToolStripButton.CheckOnClick = true;
             this.ProgramingToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ProgramingToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("ProgramingToolStripButton.Image")));
             this.ProgramingToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ProgramingToolStripButton.Name = "ProgramingToolStripButton";
             this.ProgramingToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -821,6 +863,7 @@ namespace UrJTAG_GUI
             // 
             this.SecurityToolStripButton.CheckOnClick = true;
             this.SecurityToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.SecurityToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("SecurityToolStripButton.Image")));
             this.SecurityToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SecurityToolStripButton.Name = "SecurityToolStripButton";
             this.SecurityToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -836,6 +879,7 @@ namespace UrJTAG_GUI
             // 
             this.NetworkLogToolStripButton.CheckOnClick = true;
             this.NetworkLogToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.NetworkLogToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("NetworkLogToolStripButton.Image")));
             this.NetworkLogToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.NetworkLogToolStripButton.Name = "NetworkLogToolStripButton";
             this.NetworkLogToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -846,6 +890,7 @@ namespace UrJTAG_GUI
             // 
             this.ODBIILogToolStripButton.CheckOnClick = true;
             this.ODBIILogToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ODBIILogToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("ODBIILogToolStripButton.Image")));
             this.ODBIILogToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.ODBIILogToolStripButton.Name = "ODBIILogToolStripButton";
             this.ODBIILogToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -856,6 +901,7 @@ namespace UrJTAG_GUI
             // 
             this.DebugToolStripButton.CheckOnClick = true;
             this.DebugToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.DebugToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("DebugToolStripButton.Image")));
             this.DebugToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.DebugToolStripButton.Name = "DebugToolStripButton";
             this.DebugToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -879,6 +925,7 @@ namespace UrJTAG_GUI
             // 
             this.DevicesToolStripButton.CheckOnClick = true;
             this.DevicesToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.DevicesToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("DevicesToolStripButton.Image")));
             this.DevicesToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.DevicesToolStripButton.Name = "DevicesToolStripButton";
             this.DevicesToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -894,6 +941,7 @@ namespace UrJTAG_GUI
             // 
             this.OptionsToolStripButton.CheckOnClick = true;
             this.OptionsToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.OptionsToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("OptionsToolStripButton.Image")));
             this.OptionsToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.OptionsToolStripButton.Name = "OptionsToolStripButton";
             this.OptionsToolStripButton.Size = new System.Drawing.Size(23, 22);
@@ -1014,7 +1062,7 @@ namespace UrJTAG_GUI
         #endregion
         internal System.Windows.Forms.ToolStripPanel TopToolStripPanel;
         internal System.Windows.Forms.MenuStrip MenuStrip;
-        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        internal System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem NewToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem OpenToolStripMenuItem;
         internal System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
@@ -1022,9 +1070,9 @@ namespace UrJTAG_GUI
         internal System.Windows.Forms.ToolStripMenuItem SaveAsToolStripMenuItem;
         internal System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         internal System.Windows.Forms.ToolStripMenuItem PrintToolStripMenuItem;
-        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        internal System.Windows.Forms.ToolStripMenuItem PrintPreToolStripMenuItem;
         internal System.Windows.Forms.ToolStripSeparator ToolStripSeparator9;
-        internal System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        internal System.Windows.Forms.ToolStripMenuItem ExitToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem EditToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem UndoToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem RedoToolStripMenuItem;

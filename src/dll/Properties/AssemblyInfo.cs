@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle(".NET Universal JTAG Library based on the UrJTAG project")]
 [assembly: AssemblyDescription(".NET Universal JTAG Library based on the UrJTAG project")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Piez Software")]
 [assembly: AssemblyProduct("UrJTAG-VSharp .NET Library")]
 [assembly: AssemblyCopyright("Copyright© (C) 2017-2018 S.Gray, (aka PiezPiedPy) and 1989, 1991 Free Software Foundation, Inc.")]
 [assembly: AssemblyTrademark("")]
