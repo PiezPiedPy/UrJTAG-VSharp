@@ -121,7 +121,34 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Icons\MrSmith.ico" />
+    <Content Include="Resources\Icons\class.ico" />
+    <Content Include="Resources\Icons\Diagram.ico" />
+    <Content Include="Resources\Icons\Diamond.ico" />
+    <Content Include="Resources\Icons\gear.ico" />
+    <Content Include="Resources\Icons\graph_performanceChart.ico" />
+    <Content Include="Resources\Icons\Guage.ico" />
+    <Content Include="Resources\Icons\Hammer_Builder.ico" />
+    <Content Include="Resources\Icons\LightBulb.ico" />
+    <Content Include="Resources\Icons\MapTileLayer.ico" />
+    <Content Include="Resources\Icons\MemoryWindow.ico" />
+    <Content Include="Resources\Icons\Monitor_Screen.ico" />
+    <Content Include="Resources\Icons\screwdriver.ico" />
+    <Content Include="Resources\Icons\Security_Shields_Alert.ico" />
+    <Content Include="Resources\Images\Arrow_RedoRetry_16xLG_color.png" />
+    <Content Include="Resources\Images\Arrow_UndoRevertRestore_16xLG_color.png" />
+    <Content Include="Resources\Images\Close_16xLG.png" />
+    <Content Include="Resources\Images\Copy_6524.png" />
+    <Content Include="Resources\Images\Cut_6523.png" />
     <Content Include="Resources\Images\Gustave Doré - Death on the Pale Horse %281865%29.jpg" />
+    <Content Include="Resources\Images\NewFile_6276.png" />
+    <Content Include="Resources\Images\Open_6529.png" />
+    <Content Include="Resources\Images\Paste_6520.png" />
+    <Content Include="Resources\Images\printer_16xLG.png" />
+    <Content Include="Resources\Images\PrintPreviewControl_698.png" />
+    <Content Include="Resources\Images\SaveFileDialogControl_703.png" />
+    <Content Include="Resources\Images\save_16xLG.png" />
+    <Content Include="Resources\Images\Select.png" />
+    <Content Include="Resources\Images\StatusAnnotations_Help_and_inconclusive_32xLG_color.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
