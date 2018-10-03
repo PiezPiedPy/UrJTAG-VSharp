@@ -25,4 +25,4 @@ The .NET Library is written in the C# language and targets:
 License
 -------
 UrJTAG-VSharp is available under the terms of GPL-3.0-or-later.  
-See the [COPYRIGHT.md](COPYRIGHT.md) file for details.
+See the [COPYRIGHTS.md](COPYRIGHTS.md) file for details.
