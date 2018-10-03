@@ -3,7 +3,7 @@
 
   This file is part of UrJTAG-VSharp.
   UrJTAG-VSharp is available under the terms of GPL-3.0-or-later.
-  See the LICENSE.md file for more details.
+  See the COPYRIGHT.md file for more details.
 
   UrJTAG-VSharp is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
