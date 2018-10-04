@@ -35,7 +35,8 @@ namespace UrJTAG_GUI.Forms
 
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (about_box = new AboutBox()) about_box.ShowDialog(this);
+            using (about_box = new AboutBox())
+                about_box.ShowDialog(this);
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)

@@ -3,7 +3,7 @@
 
   This file is part of UrJTAG-VSharp.
   UrJTAG-VSharp is available under the terms of GPL-3.0-or-later.
-  See the LICENSE.md file for more details.
+  See the COPYRIGHTS.md file for more details.
 
   UrJTAG-VSharp is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -20,12 +20,11 @@
 
 using System;
 using System.Windows.Forms;
-using UrJTAG_VSharp_NET;
 
 namespace UrJTAG_GUI
 {
-    /// <summary> GUI for the <see cref="UrJTAG_VSharp"/> .NET Library</summary>
-    static class UrJTAG_GUI
+    /// <summary> App Class</summary>
+    static class App
     {
         /// <summary> The main entry point for the application.</summary>
         [STAThread]
