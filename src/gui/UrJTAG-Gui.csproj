@@ -162,7 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\dll\UrJTAG-VSharp.csproj">
-      <Project>{ede15049-846d-4bec-833d-fa58aa41a2c7}</Project>
+      <Project>{a00425a8-ef3d-478d-857b-9782c5be558f}</Project>
       <Name>UrJTAG-VSharp</Name>
     </ProjectReference>
   </ItemGroup>
