@@ -15,18 +15,18 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UrJTAG-VSharp", "dll\UrJTAG
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A00425A8-EF3D-478D-857B-9782C5BE558F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A00425A8-EF3D-478D-857B-9782C5BE558F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A00425A8-EF3D-478D-857B-9782C5BE558F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A00425A8-EF3D-478D-857B-9782C5BE558F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Debug|x64.ActiveCfg = Debug|x64
+		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Debug|x64.Build.0 = Debug|x64
+		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Release|x64.ActiveCfg = Release|x64
+		{08FDED16-8FBD-4A3F-B2A8-666C71B28C41}.Release|x64.Build.0 = Release|x64
+		{A00425A8-EF3D-478D-857B-9782C5BE558F}.Debug|x64.ActiveCfg = Debug|x64
+		{A00425A8-EF3D-478D-857B-9782C5BE558F}.Debug|x64.Build.0 = Debug|x64
+		{A00425A8-EF3D-478D-857B-9782C5BE558F}.Release|x64.ActiveCfg = Release|x64
+		{A00425A8-EF3D-478D-857B-9782C5BE558F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
