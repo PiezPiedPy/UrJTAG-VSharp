@@ -16,9 +16,12 @@ The GUI is a native Windows Desktop App and not a Linux port using QT etc.
 .NET Library
 ----------
 The .NET Library is written in the C# language and targets:
-* .NET4.5
-* ASP.NET Core 1.0
-* Xamarin [.Android .iOS .iOS(Classic) and .Mac]
+* .NET Standard 2.0
+* .NET Core 2.0
+* .NET 4.6.1
+* Mono 5.4
+* Xamarin [.Android 8.0 .iOS 10.14 and .Mac 3.8]
+* UWP 10.0.1629
 
 ----
 
